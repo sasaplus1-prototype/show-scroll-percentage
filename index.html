@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>show scroll percentage</title>
+    <style>
+      html, body {
+        height: 10000px;
+      }
+
+      body {
+        margin: 0;
+      }
+
+      [data-bar] {
+        height: 3px;
+        position: fixed;
+      }
+    </style>
+  </head>
+  <body>
+    <div data-bar style="background-color: red; top: 0"></div>
+
+    <div data-bar style="background-color: lime; top: 20px" data-min-percentage="30"></div>
+
+    <div data-bar style="background-color: blue; top: 40px" data-max-percentage="70"></div>
+
+    <script src="debounce.min.js"></script>
+    <script src="scroll-top.min.js"></script>
+    <script src="throttle.min.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
